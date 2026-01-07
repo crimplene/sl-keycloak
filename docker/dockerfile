@@ -1,0 +1,11 @@
+FROM quay.io/keycloak/keycloak:latest as builder
+
+ENV KC_HEALTH_ENABLED=TRUE
+ENV KC_METRICS_ENABLED=TRUE
+
+WORKDIR /opt/keycloak
+
+ENV KC_DB_USERNAME=admin
+ENV KC_DB_PASSWORD=admin
+
+

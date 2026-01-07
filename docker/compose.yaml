@@ -1,0 +1,5 @@
+services:
+  keycloak:
+    build: keycloak/keycloak
+    ports:
+      - "8080:8080"
